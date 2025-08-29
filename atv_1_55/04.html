@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+   <p id="p1">Paragrafo 1</p>
+   <p id="p2">Paragrafo 2</p>
+   <p id="p3">Paragrafo 3</p>
+   <button onclick="botao()">Mostrar Paragrafo no console</button>
+    
+    <script>
+
+///Coloquei três parágrafos e um botão que ao clicar nele os textos dos parágrafos aparecem no console, para isso utilizei o function que diz que ao clicar no botão os textos dos parágrafos vão ser mostrados no console        
+
+        function botao(){
+            var prg1 = document.getElementById("p1").innerText;
+            var prg2 = document.getElementById("p2").innerText; 
+            var prg3 = document.getElementById("p3").innerText;
+
+            console.log(prg1);
+            console.log(prg2);
+            console.log(prg3);
+        }
+        
+    </script>    
+</body>
+</html>
