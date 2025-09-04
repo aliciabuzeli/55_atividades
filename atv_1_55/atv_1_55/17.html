@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+    <p id="sumir">Este paragrafo irá sumir ao clicar no botão</p>
+    <button onclick="esconder()">sumir</button>
+    <button onclick="aparecer()">aparecer</button>
+    
+    <script>
+        ///eu criei uma função que ao clicar no botão, o paragrafo desaparece
+        ///utilizei o style.display = "none" para fazer o paragrafo sumir
+        ///e o style.display = "block" para fazer o paragrafo aparecer novamente
+
+        function esconder() {
+            document.getElementById("sumir").style.display = "none";
+        }
+
+        function aparecer() {
+            document.getElementById("sumir").style.display = "block";
+        }
+
+    </script>
+</body>
+</html>

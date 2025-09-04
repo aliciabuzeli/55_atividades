@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="meuInput" placeholder="Digite algo" oninput="consoles()">
+
+
+    <script>
+        ///eu criei uma função que ao digitar algo no input, o valor digitado é mostrado no console
+        ///utilizei o evento oninput para detectar a digitação no input
+
+
+        function consoles() {
+            const valor = document.getElementById("meuInput").value;
+            console.log(valor);
+        }
+    </script>
+</body>
+</html>

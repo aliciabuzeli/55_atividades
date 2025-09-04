@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Titulo</h1>
+    <input type="text" id="meuInput" placeholder="Digite algo">
+    <button onclick="mudarTexto()">Clique aqui</button>
+
+
+    <script>
+        function mudarTexto() {
+            const valor = document.getElementById("meuInput").value;
+            document.getElementById("titulo").innerText = valor;
+            
+        }
+    </script>
+</body>
+</html>

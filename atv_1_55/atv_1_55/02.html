@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+   <input type="text" id="nome" placeholder="Digite seu nome">
+   <button onclick="mostrarValor()">Texto</button>
+   <p id="fim"></p>
+    
+    <script>
+
+///utilizei o input para o usuario digitar o nome e o botao que que ao clicar aparece o nome da pesso embaixo então com o fuction após a pessoa clicar no botão a variavel nome do input pega o valor digitado e com o getElementById o innerText mostra o nome na tela
+
+        function mostrarValor(){
+            var nome = document.getElementById("nome").value;
+            document.getElementById("fim").innerText = nome;
+        }
+    </script>
+</body>
+</html>

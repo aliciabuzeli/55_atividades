@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="meuParagrafo">Paragrafo</p>
+    <button onclick="contarCaracteres()">Contar Caracteres</button>
+    
+    <script>
+
+///Eu utilizei o paragrafo para mostrar o texto original e ao clicar no botão o numero de caracteres é mostrado em um alert, para isso acontecer eu utilizei o function que diz que ao clicar no botão o paragrafo que diz "Paragrafo" vai ser contado e mostrado em um alert
+
+        function contarCaracteres() {
+            var texto = document.getElementById("meuParagrafo").innerText;
+            var caracteres = texto.length;
+            alert("Número de caracteres: " + caracteres);
+        }
+        
+    </script>    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragrafo">Contar quantos clicks</p>
+    <button onclick="contarClicks()">Click me</button>
+
+
+    <script>
+        ///eu criei uma função que ao clicar no botão, conta quantos clicks foram feitos e mostra na tela
+        ///utilizei uma variável para contar os clicks e o innerText para mostrar na tela
+
+        var contador = 0;
+
+        function contarClicks() {
+            contador++;
+            document.getElementById("paragrafo").innerText = "Número de clicks: " + contador;
+        }
+    </script>
+</body>
+</html>

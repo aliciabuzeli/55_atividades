@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <img id="carrossel" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D2623740227897436%26id%3D1551528098451993%26set%3Da.1651200931818042&psig=AOvVaw0jLIAzj65SZmpPFx6Z7Djt&ust=1757081456696000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCbttOkv48DFQAAAAAdAAAAABAE" alt="Imagem" width="300">
+  <br>
+  <button onclick="proximaImagem()">Próximo</button>
+
+  <script>
+    const imagens = ["https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D2623740227897436%26id%3D1551528098451993%26set%3Da.1651200931818042&psig=AOvVaw0jLIAzj65SZmpPFx6Z7Djt&ust=1757081456696000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCbttOkv48DFQAAAAAdAAAAABAE", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pinterest.com%2Fkauaguiar%2Fcalop%2F&psig=AOvVaw0jLIAzj65SZmpPFx6Z7Djt&ust=1757081456696000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCbttOkv48DFQAAAAAdAAAAABAU", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblogdodinoadestrador.wordpress.com%2F2014%2F05%2F12%2Fcalopsitas-merecem-cuidado-como-qualquer-outro-animal-de-estimacao%2F&psig=AOvVaw0jLIAzj65SZmpPFx6Z7Djt&ust=1757081456696000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCbttOkv48DFQAAAAAdAAAAABAe"]; 
+    var indice = 0;
+
+    function proximaImagem() {
+      indice++; 
+      if (indice >= imagens.length) {
+        indice = 0; 
+      }
+      document.getElementById("carrossel").src = imagens[indice];
+    }
+    </script>
+</body>
+</html>

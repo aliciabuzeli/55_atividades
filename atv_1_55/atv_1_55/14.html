@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="quadrado">
+        <p>Quadrado</p>
+    </div>
+    <button onclick="mudarTamanho()">Mudar tamanho do quadrado</button>
+
+    <script>
+    ///eu criei uma função que ao clicar no botão, o tamanho do quadrado aumenta para 300px e a cor de fundo muda para vermelho
+
+
+        function mudarTamanho() {
+            document.getElementById("quadrado").style.width = "300px";
+            document.getElementById("quadrado").style.height = "300px";
+            document.getElementById("quadrado").style.background = "red";
+        }
+    </script> 
+</body>
+</html>

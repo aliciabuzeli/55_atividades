@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="meuInput" placeholder="Digite algo" onfocus="pintarFundo()">
+
+
+    <script>
+        ///eu criei uma função que ao clicar no input, o fundo do input muda para amarelo
+        ///utilizei o evento onfocus para detectar o clique no input
+
+
+        function pintarFundo() {
+            document.getElementById("meuInput").style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>

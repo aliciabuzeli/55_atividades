@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="meuInput" placeholder="Digite algo">
+    <button onclick="mostrarTexto()">Mostrar Texto</button>
+        <p id="resultado"></p>
+
+
+    <script>
+        
+        function mostrarTexto() {
+            const texto = document.getElementById("meuInput").value;
+            document.getElementById("resultado").innerText = texto;
+        }
+
+
+    </script>
+</body>
+</html>
